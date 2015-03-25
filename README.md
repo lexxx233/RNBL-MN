@@ -8,13 +8,19 @@ Built on top of WEKA. References can be found [here](http://link.springer.com/ch
 ## Usage
 Load in your training and test (ARFF format)
 ```java
+import java.io.File;
+import weka.core.Instances;
+import weka.core.converters.ArffLoader;
+
+...
+
 ArffLoader loader = new ArffLoader();
 
-loader.setFile("train.arff");
+loader.setFile(new File("train.arff"));
 Instances trainSet = loader.getDataSet();
 trainSet.setClassIndex(dataSet.numAttributes()-1);
 
-loader.setFile("test.arff")
+loader.setFile(new File("test.arff"));
 Instances testSet = loader.getDataSet();
 testSet.setClassIndex(dataSet.numAttributes()-1);
 ```
