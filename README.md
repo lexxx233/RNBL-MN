@@ -29,12 +29,12 @@ Train RNBL
 RNBLMN classifier = new RNBLMN(trainSet, Double.NaN);
 classifier.build(); //Recursively construct NB Tree
 ```
-Classify the an instance in test set (i.e. first instance)
+Classify the an instance in the test set (i.e. first instance)
 ```java
 classifier.classify(testSet.firstInstance()); 
 //This will return a double - the classValue which the instance is classified into
 ```
-Or evaluate performance on entire test set
+Or evaluate performance on the entire test set
 ```java
 classifier.eval(testSet);
 ```
