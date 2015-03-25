@@ -3,7 +3,7 @@ Recursive Naive Bayes Multinomial
 
 Implementation of RNBL-MN 
 
-Built on top of WEKA. References can be found [here](http://link.springer.com/chapter/10.1007%2F11731139_8#page-1)
+Built on top of WEKA [NaiveBayesMultinomial](http://weka.sourceforge.net/doc.dev/weka/classifiers/bayes/NaiveBayesMultinomial.html). References can be found [here](http://link.springer.com/chapter/10.1007%2F11731139_8#page-1)
 
 ## Usage
 Load in your training and test (ARFF format)
