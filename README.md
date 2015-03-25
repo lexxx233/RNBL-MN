@@ -27,7 +27,7 @@ testSet.setClassIndex(dataSet.numAttributes()-1);
 Train RNBL
 ```java
 RNBLMN classifier = new RNBLMN(trainSet, Double.NaN);
-classifier.build();
+classifier.build(); //Recursively construct NB Tree
 ```
 Classify the an instance in test set (i.e. first instance)
 ```java
