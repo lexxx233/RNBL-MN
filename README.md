@@ -34,3 +34,7 @@ Classify the an instance in test set (i.e. first instance)
 classifier.classify(testSet.firstInstance()); 
 //This will return a double - the classValue which the instance is classified into
 ```
+Or evaluate performance on entire test set
+```java
+classifier.eval(testSet);
+``
